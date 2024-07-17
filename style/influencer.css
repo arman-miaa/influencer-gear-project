@@ -17,7 +17,7 @@ body{
 
 /* header style start here */
 .navbar-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@ body{
 
 .nav-links{
     display: flex;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     align-items: center;
 }
 
@@ -50,7 +50,7 @@ body{
 
 /* banner style here */
 .banner-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,9 +60,7 @@ body{
     margin-top: 50px;
 }
 
-.banner-text-container {
-    border: 1px solid green;
-}
+
 .banner-text-container h3 {
     font-size:52px;
     font-weight: 700;
@@ -86,7 +84,7 @@ border: none;
 }
 
 .banner-image-container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-image: url("../images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -94,13 +92,119 @@ border: none;
 }
 
 .companies-logo-container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 80%;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto;
     justify-content: space-between;
     margin-top: 70px;
     padding: 20px;
     background: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+/* main section style here */
+.main-section-container {
+    /* border: 1px solid rgb(47, 21, 199); */
+    width:80%;
+    /* height: 1662px; */
+    margin: 0 auto;
+    margin-top: 100px;
+    /* padding: 0px 20px; */
+}
+.main-section-title-content h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.images-container {
+    /* border: 1px solid tomato; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    gap: 30px;
+    padding-bottom: 70px;
+    position: relative;
+
+}
+.image-card-container {
+    /* border: 1px solid rgb(24, 181, 37); */
+    border-radius: 5px;
+    padding: 10px;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+background: rgb(255, 255, 255);
+}
+#card-img {
+    width: 100%;
+}
+.image-card-text-container h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.image-card-text-container h5 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.image-card-text-container p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.see-more-text{
+    color: red;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+
+}
+.more-text-icon{
+    background: rgba(224, 44, 109, 0.87);
+    color: rgba(224, 44, 109, 0.87);
+    
+}
+
+
+/* responsive design here */
+
+@media screen and (max-width: 576px) {
+    .nav-title h3{
+        text-align: center;
+    }
+    .nav-links{
+        display: none;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+ 
+    .companies-logo-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 0px;
+    }
+    .companies-logo-container img {
+        width:auto;
+        gap: 0px;
+        row-gap: 80px;
+    }
+
+    .images-container{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    }
+    .image-card-container { 
+        width: 100%;
+    }
 }
