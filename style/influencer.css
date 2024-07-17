@@ -171,6 +171,40 @@ background: rgb(255, 255, 255);
     
 }
 
+.featur-product-container {
+    /* border: 1px solid green; */
+    width:83%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    gap: 95px;
+
+}
+
+
+.featur-text-content h3 {
+    font-size: 38px;
+font-weight: 700;
+margin-top: 23px;
+}
+
+.featur-text-content p {
+    font-weight: 700;
+line-height: 28px;
+width: 70%;
+margin-top: 16px;
+}
+
+.featur-text-content button {
+    background: rgb(224, 44, 109);
+    padding: 10px 24px;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    margin-top: 16px;
+}
+
 
 /* responsive design here */
 
