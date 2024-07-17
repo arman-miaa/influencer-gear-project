@@ -9,7 +9,6 @@
 
 body{
     max-width: 1440px;
-    border: 1px solid gray;
     margin: 0 auto;
     font-family: "Poppins", sans-serif;
 
@@ -28,12 +27,22 @@ body{
 .nav-title{
     font-weight: bold;
     font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.nav-menu {
+    display: none;
 }
 
 .nav-links{
     display: flex;
     /* border: 1px solid yellow; */
     align-items: center;
+}
+.nav-cart {
+    display: none;
 }
 
 .nav-links > li{
@@ -94,14 +103,35 @@ border: none;
 .companies-logo-container {
     /* border: 1px solid red; */
     width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns:auto auto auto auto auto auto auto;
-    justify-content: space-between;
-    margin-top: 70px;
-    padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   margin-top: 50px;
+   gap: 50px;
+
     background: rgb(255, 255, 255);
     cursor: pointer;
+}
+.logo-first-content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* background-color: gray; */
+}
+.logo-amazon-img{
+    align-self: flex-end;
+}
+.logo-first-content > img {
+    height: 100%;
+}
+.logo-second-content {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* main section style here */
@@ -249,29 +279,50 @@ margin-top: 16px;
 
 @media screen and (max-width: 576px) {
     .nav-title h3{
-        text-align: center;
+        /* text-align: center; */
+        font-size:22px ;
+        font-weight: 600;
     }
     .nav-links{
         display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+    .nav-cart {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
     }
     .banner-container {
         flex-direction: column-reverse;
     }
  
     .companies-logo-container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        width: auto;
-        justify-content: center;
-        align-items: center;
-        gap: 0px;
-        padding: 0px;
+       /* display: flex; 
+       width: 100%;
+       flex-wrap: wrap;
+       row-gap: 20px; */
+       width: 90%;
+       margin: 0 auto;
+       margin-top: 30px;
+       flex-direction: column;
+       row-gap: 20px;
     }
-    .companies-logo-container img {
+    .logo-first-content {
+        width: 100%;
+    }
+    .logo-second-content {
+        width: 100%;
+    }
+
+
+    /* .companies-logo-container img {
         width:auto;
         gap: 0px;
         row-gap: 80px;
-    }
+    } */
 
     .images-container{
     grid-template-columns: repeat(1, 1fr);
