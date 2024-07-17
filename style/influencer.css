@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +11,8 @@ body{
     max-width: 1440px;
     border: 1px solid gray;
     margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+
 }
 
 /* header style start here */
@@ -18,7 +23,7 @@ body{
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .nav-title{
     font-weight: bold;
@@ -40,4 +45,62 @@ body{
 
 .nav-links li a {
     text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+/* banner style here */
+.banner-container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.banner-text-container {
+    border: 1px solid green;
+}
+.banner-text-container h3 {
+    font-size:52px;
+    font-weight: 700;
+}
+
+.banner-text-container p {
+    font-weight: 600;
+    margin-top: 16px;
+}
+.banner-text-container button {
+    border-radius: 41px;
+background: rgb(224, 44, 109);
+padding: 10px 24px;
+color: white;
+display: flex;
+align-items: center;
+gap: 20px;
+margin-top: 16px;
+font-weight: 700;
+border: none;
+}
+
+.banner-image-container{
+    border: 1px solid black;
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.companies-logo-container {
+    border: 1px solid red;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
 }
